@@ -20,7 +20,7 @@ return new class extends Migration
             $table->foreignId('category_id')->unsigned();
             $table->foreignId('subcategory_id')->unsigned();
             $table->string('text_desc');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->string('status');
             $table->timestamps();
             $table->foreign('category_id')->on('categories')->references('id')->cascadeOnDelete();

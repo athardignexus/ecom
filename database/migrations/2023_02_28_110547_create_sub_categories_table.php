@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('slug');
             $table->foreignId('category_id')->unsigned();
             $table->string('text_desc');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->string('status');
             $table->timestamps();
             $table->foreign('category_id')->on('categories')->references('id')->cascadeOnDelete();
