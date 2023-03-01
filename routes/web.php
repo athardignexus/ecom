@@ -23,7 +23,7 @@ use App\Http\Controllers\ChildAttributeController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('admin.signin');
 });
 Route::get('user', function () {
     return view('user.index');
@@ -71,6 +71,6 @@ route::group(['middleware' => 'auth', "prefix" => 'admin'], function () {
     Route::resource('category', CategoryController::class);
     Route::resource('childCategory', ChildCategoryController::class);
     Route::resource('subcategory', SubCategoryController::class);
-    Route::resource('addproduct',);
+    Route::resource('addproduct',ProductController::class);
     Route::get('logout', [LoginController::class, 'logout'])->name('logout');
 });
