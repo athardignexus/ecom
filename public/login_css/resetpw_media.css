@@ -1,0 +1,88 @@
+/*responsive  start*/
+
+/*---max-width (991px)---*/
+@media (max-width:991px){
+    .none{
+        display: none;
+    }
+    .mail_input2 {
+        margin: 40px auto 0;
+    }
+}
+/*---max-width (768px)---*/
+@media (max-width:768px){
+    .input_part {
+        width: 100%;
+    }
+    .none{
+        display: none;
+    }
+    .img_one img {
+        width: 50%;
+    }
+    .head h2 {
+        font-size: 35px;
+        font-weight: 500;
+    }
+    .mail_input2 {
+        margin: 10px auto 0;
+    }
+    .text_part2 {
+        margin: 30px 0;
+    }
+    .change_btn button {
+        padding: 12px 101px;
+        font-size: 17px;
+    }
+    .change_btn {
+        padding: 10px 7px;
+        margin-top: 30px;
+        
+    }
+}
+
+
+/*---max-width (575px)---*/
+@media (max-width:575px) {
+    .none{
+        display: none;
+    }
+    .img_one img {
+        width: 50%;
+    }
+    .head h2 {
+        font-size: 25px;
+    }
+    .text_part2 p {
+        font-size: 19px;
+    }
+    .mail_input2 {
+        margin: 10px auto 0;
+        width: 331px;
+    }
+    .text_part2 {
+        margin: 15px 0;
+    }
+    .change_btn button {
+        padding: 12px 101px;
+        font-size: 17px;
+    }
+    .change_btn {
+        padding: 10px 7px;
+        margin-top: 30px;
+        
+    }
+    .form-control{
+        padding: 11px 20px;
+    }
+    .Control-label--showPassword {
+        top: 21px;
+    }
+}
+
+/*---max-width (414px)---*/
+@media (max-width:414px) {
+    .none{
+        display: none;
+    }
+}

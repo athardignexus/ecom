@@ -1,0 +1,8 @@
+.class{
+    border-style: solid;
+    box-sizing: border-box;
+    border-top-width: 15px;
+    border-bottom-color: #ff0000;
+    color: black;
+    background-color: powderblue;
+}
