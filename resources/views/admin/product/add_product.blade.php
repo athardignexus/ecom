@@ -5,7 +5,7 @@
         <div class="nk-block-head">
             <div class="nk-block-head-between flex-wrap gap g-2">
                 <div class="nk-block-head-content">
-                    <h2 class="nk-block-title">Add Products</h1>
+                    <h2 class="nk-block-title">Add New Products</h1>
                 </div>
                 <div class="nk-block-head-content">
                     <ul class="d-flex  gap-3">
@@ -61,34 +61,36 @@
                         <div class="form-group mb-3 mt-3">
                             <label for="exampleFormControlInputText1" class="form-label">Name</label>
                             <div class="form-control-wrap">
-                                <input type="text" class="form-control" id="exampleFormControlInputText1"
+                                <input type="text" name="name" class="form-control" id="exampleFormControlInputText1"
                                     placeholder="Write product name">
                             </div>
                         </div>
                         <div class="form-group mb-3">
                             <label for="exampleFormControlInputText1" class="form-label">Slug</label>
                             <div class="form-control-wrap">
-                                <input type="text" class="form-control" id="exampleFormControlInputText1"
+                                <input type="text" name="slug" class="form-control" id="exampleFormControlInputText1"
                                     placeholder="Write product slug">
                             </div>
                         </div>
                         <div class="form-group mb-3">
                             <label for="exampleFormControlTextarea8" class="form-label">Summary</label>
                             <div class="form-control-wrap">
-                                <textarea placeholder="write product summery" class="form-control" id="exampleFormControlTextarea8" rows="3"></textarea>
+                                <textarea placeholder="write product summery" name="summary" class="form-control" id="exampleFormControlTextarea8"
+                                    rows="3"></textarea>
                             </div>
                         </div>
 
                         <div class="nk-block">
                             <!-- <div class="nk-block-head">
-                                                    <div class="nk-block-head-content">
-                                                        <small>Description</small>
-                                                    </div>
-                                                </div> -->
+                                                                                                                <div class="nk-block-head-content">
+                                                                                                                    <small>Description</small>
+                                                                                                                </div>
+                                                                                                            </div> -->
                             <div class=" mb-3">
                                 <label for="exampleFormControlTextarea8" class="form-label">Description</label>
                                 <div class="card-body">
-                                    <div class="js-tinymce" id="tinymceNoMenubar" data-menubar="false"> Hello tinymce </div>
+                                    <div class="js-tinymce" name="description" id="tinymceNoMenubar" data-menubar="false">
+                                        Hello tinymce </div>
                                     <!-- <div class="form-note mt-3"> Use <code>data-menubar="false"</code> attribute to <code>.js-tinymce</code> to hide menubar. </div> -->
                                 </div><!-- .card-body -->
                             </div><!-- .card -->
@@ -98,7 +100,7 @@
                         <div class="form-group mb-3">
                             <label for="exampleFormControlInputText5" class="form-label">Brand</label>
                             <div class="form-control-wrap">
-                                <select class="form-select" id="exampleFormControlInputText5"
+                                <select class="form-select" name="brand" id="exampleFormControlInputText5"
                                     aria-label="Default select example">
                                     <option selected>Select Brand</option>
                                     <option value="1">One</option>
@@ -113,24 +115,24 @@
                         <div class="form-group mb-3 mt-5">
                             <label for="exampleFormControlInputText1" class="form-label">Base Cost</label>
                             <div class="form-control-wrap">
-                                <input type="text" class="form-control" id="exampleFormControlInputText1"
-                                    placeholder="Base cost...">
+                                <input type="text" name="baseCost" class="form-control"
+                                    id="exampleFormControlInputText1" placeholder="Base cost...">
                                 <p>Purchase price of this product.</p>
                             </div>
                         </div>
                         <div class="form-group mb-3 mt-3">
                             <label for="exampleFormControlInputText1" class="form-label">Regular Price</label>
                             <div class="form-control-wrap">
-                                <input type="text" class="form-control" id="exampleFormControlInputText1"
-                                    placeholder="Enter regular price">
+                                <input type="text" name="regularPrice" class="form-control"
+                                    id="exampleFormControlInputText1" placeholder="Enter regular price">
                                 <p>This price will display like this ( $ 10)</p>
                             </div>
                         </div>
                         <div class="form-group mb-3 mt-3">
                             <label for="exampleFormControlInputText1" class="form-label">Sale Price</label>
                             <div class="form-control-wrap">
-                                <input type="text" class="form-control" id="exampleFormControlInputText1"
-                                    placeholder="Enter sale price">
+                                <input type="text" name="salePrice" class="form-control"
+                                    id="exampleFormControlInputText1" placeholder="Enter sale price">
                                 <p>This will be your product selling price</p>
                             </div>
                         </div>
@@ -180,14 +182,16 @@
                         <div class="form-group mb-4 mt-3">
                             <label for="exampleFormControlInputText1" class="form-label">sku</label>
                             <div class="form-control-wrap">
-                                <input type="text" class="form-control" id="exampleFormControlInputText1">
+                                <input type="text" name="sku" class="form-control"
+                                    id="exampleFormControlInputText1">
                             </div>
                             <small>Custom Unique Code for this product.</small>
                         </div>
                         <div class="form-group mb-3">
                             <label for="exampleFormControlInputText1" class="form-label">Quantity</label>
                             <div class="form-control-wrap">
-                                <input type="text" class="form-control" id="exampleFormControlInputText1">
+                                <input type="text" name="quantity" class="form-control"
+                                    id="exampleFormControlInputText1">
                             </div>
                             <small>This will be replaced with the sum of inventory items. if any inventory item is
                                 registered..</small>
@@ -196,7 +200,8 @@
                         <div class="form-group mb-3">
                             <label for="exampleFormSelect1" class="form-label">Unit</label>
                             <div class="form-control-wrap">
-                                <select class="form-select" id="exampleFormSelect1" aria-label="Default select example">
+                                <select class="form-select" name="unit" id="exampleFormSelect1"
+                                    aria-label="Default select example">
                                     <option selected>Select unit</option>
                                     <option value="1">One</option>
                                 </select>
@@ -206,8 +211,8 @@
                         <div class="form-group mb-3">
                             <label for="exampleFormControlInputText1" class="form-label">Unit Of Measurement</label>
                             <div class="form-control-wrap">
-                                <input type="number" placeholder="Enter unit of measurement" class="form-control"
-                                    id="exampleFormControlInputText1">
+                                <input type="number" name="unitmeasurement" placeholder="Enter unit of measurement"
+                                    class="form-control" id="exampleFormControlInputText1">
                             </div>
                             <small>Enter the number here</small>
                         </div>
@@ -217,7 +222,8 @@
                         <div class="form-group mb-3 mt-3">
                             <label for="exampleFormControlInputText1" class="form-label">Tags</label>
                             <div class="form-control-wrap">
-                                <input type="text" class="form-control" id="exampleFormControlInputText1">
+                                <input type="text" name="tags" class="form-control"
+                                    id="exampleFormControlInputText1">
                             </div>
                         </div>
 
@@ -249,7 +255,7 @@
                                     <div class="form-group">
                                         <label for="exampleFormSelect1" class="form-label">Item size</label>
                                         <div class="form-control-wrap">
-                                            <select class="form-select" id="exampleFormSelect1"
+                                            <select class="form-select" name="itemsize" id="exampleFormSelect1"
                                                 aria-label="Default select example">
                                                 <option selected>Select size</option>
                                                 <option value="1">Large</option>
@@ -265,7 +271,7 @@
                                     <div class="form-group">
                                         <label for="exampleFormSelect1" class="form-label">Item Color</label>
                                         <div class="form-control-wrap">
-                                            <select class="form-select" id="exampleFormSelect1"
+                                            <select class="form-select" name="itemcolor" id="exampleFormSelect1"
                                                 aria-label="Default select example">
                                                 <option selected>Select size</option>
                                                 <option value="1">Red</option>
@@ -287,8 +293,8 @@
                                         <label for="exampleFormControlInputText1" class="form-label">Additional
                                             Price</label>
                                         <div class="form-control-wrap">
-                                            <input type="number" class="form-control" id="exampleFormControlInputText1"
-                                                placeholder="0">
+                                            <input type="number" name="additionalprice" class="form-control"
+                                                id="exampleFormControlInputText1" placeholder="0">
                                         </div>
                                     </div>
                                 </div>
@@ -296,8 +302,8 @@
                                     <div class="form-group">
                                         <label for="exampleFormControlInputText1" class="form-label">Extra cost</label>
                                         <div class="form-control-wrap">
-                                            <input type="number" class="form-control" id="exampleFormControlInputText1"
-                                                placeholder="0">
+                                            <input type="number" name="extracost" class="form-control"
+                                                id="exampleFormControlInputText1" placeholder="0">
                                         </div>
                                     </div>
                                 </div>
@@ -305,8 +311,8 @@
                                     <div class="form-group">
                                         <label for="exampleFormControlInputText1" class="form-label">Stock count</label>
                                         <div class="form-control-wrap">
-                                            <input type="number" class="form-control" id="exampleFormControlInputText1"
-                                                placeholder="0">
+                                            <input type="number" name="stockcount" class="form-control"
+                                                id="exampleFormControlInputText1" placeholder="0">
                                         </div>
                                     </div>
                                 </div>
@@ -339,7 +345,7 @@
                                     <div class="form-group">
                                         <label for="exampleFormSelect1" class="form-label">Attribute Name</label>
                                         <div class="form-control-wrap">
-                                            <select class="form-select" id="exampleFormSelect1"
+                                            <select class="form-select" name="attributename" id="exampleFormSelect1"
                                                 aria-label="Default select example">
                                                 <option selected>Select attribute</option>
                                                 <option value="1">Fabric</option>
@@ -351,7 +357,7 @@
                                     <div class="form-group">
                                         <label for="exampleFormSelect1" class="form-label">Attribute Value</label>
                                         <div class="form-control-wrap">
-                                            <select class="form-select" id="exampleFormSelect1"
+                                            <select class="form-select" name="attributevalue" id="exampleFormSelect1"
                                                 aria-label="Default select example">
                                                 <option selected>Select attribute Value</option>
                                                 <option value="1">Large</option>
@@ -372,7 +378,8 @@
                         <div class="form-group mt-3 mb-3">
                             <label for="exampleFormSelect1" class="form-label">Category</label>
                             <div class="form-control-wrap">
-                                <select class="form-select" id="exampleFormSelect1" aria-label="Default select example">
+                                <select class="form-select" name="category" id="exampleFormSelect1"
+                                    aria-label="Default select example">
                                     <option selected>Select Category</option>
                                     <option value="1">Clothing</option>
                                     <option value="1">Beauty</option>
@@ -388,7 +395,8 @@
                         <div class="form-group mb-3">
                             <label for="exampleFormSelect1" class="form-label">Sub Category</label>
                             <div class="form-control-wrap">
-                                <select class="form-select" id="exampleFormSelect1" aria-label="Default select example">
+                                <select class="form-select" name="subcategory" id="exampleFormSelect1"
+                                    aria-label="Default select example">
                                     <option selected>Select sub category</option>
                                     <option value="1">One</option>
                                 </select>
@@ -399,7 +407,8 @@
                             <div class="form-group">
                                 <label class="form-label">Multiple select input</label>
                                 <div class="form-control-wrap">
-                                    <select class="js-select" multiple data-search="true" data-sort="false">
+                                    <select class="js-select" name="multipleselectinput" multiple data-search="true"
+                                        data-sort="false">
                                         <option value="">Select Payment Method</option>
                                         <option value="1">PayPal</option>
                                         <option value="2">Bank Transfer</option>
@@ -474,16 +483,16 @@
                                 <div class="form-group mt-3">
                                     <label for="exampleFormControlInputText1" class="form-label">Title</label>
                                     <div class="form-control-wrap">
-                                        <input type="text" class="form-control" id="exampleFormControlInputText1"
-                                            placeholder="General info Title">
+                                        <input type="text" name="generalinfotitle" class="form-control"
+                                            id="exampleFormControlInputText1" placeholder="General info Title">
                                     </div>
                                 </div>
 
                                 <div class="form-group mt-3">
                                     <label for="exampleFormControlTextarea8" class="form-label">Description</label>
                                     <div class="form-control-wrap">
-                                        <textarea placeholder="General info description" class="form-control" id="exampleFormControlTextarea8"
-                                            rows="3"></textarea>
+                                        <textarea placeholder="General info description" name="generalinfodescription" class="form-control"
+                                            id="exampleFormControlTextarea8" rows="3"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -493,16 +502,16 @@
                                 <div class="form-group mt-3">
                                     <label for="exampleFormControlInputText1" class="form-label">Title</label>
                                     <div class="form-control-wrap">
-                                        <input type="text" class="form-control" id="exampleFormControlInputText1"
-                                            placeholder="General info Title">
+                                        <input type="text" name="facebooktitle" class="form-control"
+                                            id="exampleFormControlInputText1" placeholder="General info Title">
                                     </div>
                                 </div>
 
                                 <div class="form-group mt-3">
                                     <label for="exampleFormControlTextarea8" class="form-label">Description</label>
                                     <div class="form-control-wrap">
-                                        <textarea placeholder="General info description" class="form-control" id="exampleFormControlTextarea8"
-                                            rows="3"></textarea>
+                                        <textarea placeholder="General info description" name="facebookdescription" class="form-control"
+                                            id="exampleFormControlTextarea8" rows="3"></textarea>
                                     </div>
                                 </div>
 
@@ -530,16 +539,16 @@
                                 <div class="form-group mt-3">
                                     <label for="exampleFormControlInputText1" class="form-label">Title</label>
                                     <div class="form-control-wrap">
-                                        <input type="text" class="form-control" id="exampleFormControlInputText1"
-                                            placeholder="General info Title">
+                                        <input type="text" name="twittertitle" class="form-control"
+                                            id="exampleFormControlInputText1" placeholder="General info Title">
                                     </div>
                                 </div>
 
                                 <div class="form-group mt-3">
                                     <label for="exampleFormControlTextarea8" class="form-label">Description</label>
                                     <div class="form-control-wrap">
-                                        <textarea placeholder="General info description" class="form-control" id="exampleFormControlTextarea8"
-                                            rows="3"></textarea>
+                                        <textarea placeholder="General info description" name="twitterdescription" class="form-control"
+                                            id="exampleFormControlTextarea8" rows="3"></textarea>
                                     </div>
                                 </div>
 
@@ -570,16 +579,16 @@
                             <label for="exampleFormControlInputText1" class="form-label">Minimum quantity of
                                 Purchase</label>
                             <div class="form-control-wrap">
-                                <input type="text" class="form-control" id="exampleFormControlInputText1"
-                                    placeholder="Minimum quantity of Purchase">
+                                <input type="text" name="minquantitypurchase" class="form-control"
+                                    id="exampleFormControlInputText1" placeholder="Minimum quantity of Purchase">
                             </div>
                         </div>
                         <div class="form-group mt-3">
                             <label for="exampleFormControlInputText1" class="form-label">Maximum quantity of
                                 Purchase</label>
                             <div class="form-control-wrap">
-                                <input type="text" class="form-control" id="exampleFormControlInputText1"
-                                    placeholder="Maximum quantity of Purchase">
+                                <input type="text" name="maxquantitypurchase" class="form-control"
+                                    id="exampleFormControlInputText1" placeholder="Maximum quantity of Purchase">
                             </div>
                         </div>
 
@@ -587,7 +596,8 @@
                             <label class="form-check-label me-2" for="flexSwitchDefault">
                                 Inventory Warning
                             </label>
-                            <input class="form-check-input" type="checkbox" value="" id="flexSwitchDefault">
+                            <input class="form-check-input" name="inventorywarning" type="checkbox" value=""
+                                id="flexSwitchDefault">
 
                         </div>
                     </div>
@@ -596,14 +606,15 @@
 
                         <div class="nk-block mt-5">
                             <!-- <div class="nk-block-head">
-                                                    <div class="nk-block-head-content">
-                                                        <small>Description</small>
-                                                    </div>
-                                                </div> -->
+                                                                                                                <div class="nk-block-head-content">
+                                                                                                                    <small>Description</small>
+                                                                                                                </div>
+                                                                                                            </div> -->
                             <div class=" mb-3">
                                 <label for="exampleFormControlTextarea8" class="form-label">Policy Description</label>
                                 <div class="card-body">
-                                    <div class="js-tinymce" id="tinymceNoMenubar" data-menubar="false"> Hello tinymce
+                                    <div class="js-tinymce" name="policydescription" id="tinymceNoMenubar"
+                                        data-menubar="false"> Hello tinymce
                                     </div>
                                     <!-- <div class="form-note mt-3"> Use <code>data-menubar="false"</code> attribute to <code>.js-tinymce</code> to hide menubar. </div> -->
                                 </div><!-- .card-body -->
